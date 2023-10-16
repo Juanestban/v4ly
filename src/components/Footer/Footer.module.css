@@ -1,0 +1,11 @@
+.container {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--v4ly-header-border-color);
+}
+
+.container p {
+  margin: 0;
+}

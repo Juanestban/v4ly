@@ -1,0 +1,33 @@
+.container {
+  border-bottom: 1px solid var(--v4ly-header-border-color);
+  padding: 10px 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.wrapText h1 {
+  margin: 0;
+}
+
+.nav,
+.ul {
+  margin: 0;
+  padding: 0;
+}
+
+.ul {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.ul li {
+  list-style: none;
+}

@@ -1,0 +1,60 @@
+.info {
+  background-color: rgba(37, 84, 170, 0.322);
+  color: white;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+}
+
+.warning p {
+  margin: 0;
+}
+
+.danger {
+  background-color: rgba(158, 27, 71, 0.301);
+  color: white;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.danger h4 {
+  margin: 0;
+}
+
+.danger p {
+  margin: 0;
+}
+
+.wrapper {
+  margin: 20px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.formControl {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input {
+  width: 300px;
+  padding: 10px 5px;
+}
+
+.select {
+  width: 150px;
+  padding: 5px;
+}
+
+.button {
+  padding: 7px 10px;
+  cursor: pointer;
+}
