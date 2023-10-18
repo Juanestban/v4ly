@@ -2,9 +2,11 @@ import { useState, ChangeEvent, FormEvent } from 'react';
 import { FiLoader } from 'react-icons/fi';
 
 import {
+  YUTU_ENDPOINT,
   YOUTUBE_LINK,
   FORMAT_RESOLUTIONS_AVALAIBLES as formatAvalaibles,
 } from '@v4ly/config/constants';
+import env from '@v4ly/environments';
 
 import s from './Yutu.module.css';
 
@@ -30,12 +32,15 @@ export default function Yutu() {
 
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:3200/api/yt/full', {
+      const response = await fetch(`${env.baseUrlApi}/${YUTU_ENDPOINT}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(form),
+        body: JSON.stringify({
+          ...form,
+          filename: form.filename === '' ? undefined : form.filename,
+        }),
       });
       const res = await response.json();
       const { filename, link } = res as ResponseYutu;
