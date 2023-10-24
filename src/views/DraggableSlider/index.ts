@@ -1,1 +1,1 @@
-export { default as DraggableSlider, type DraggableSliderProps } from './DraggableSlider';
+export { default as DraggableSlider } from './DraggableSlider';
