@@ -1,5 +1,6 @@
 export const ROUTE_HOME = '/';
 export const ROUTE_TIMELINE = '/time-line-in-css';
+export const ROUTE_DRAGGABLE_SLIDER = '/draggable-slider'
 export const ROUTE_YUTU = '/yutu';
 
 export const ROUTES = [
